@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     //private void OnEnable()
@@ -25,9 +25,16 @@ public class PlayerController : MonoBehaviour
     //private void OnDisable()
     //{
     //    movement.Disable();
-    //}
+    //}    
+
     // Update is called once per frame
     void Update()
+    {
+        ProcessTranslation();
+        ProcessRotation();
+    }
+
+    private void ProcessTranslation()
     {
         //float horizontalThrow = movement.ReadValue<Vector2>().x;
         //float verticalThrow = movement.ReadValue<Vector2>().y;
@@ -45,5 +52,10 @@ public class PlayerController : MonoBehaviour
         float clampedYPos = Mathf.Clamp(rawyPos, -yRange, yRange);
 
         transform.localPosition = new Vector3(clampedXPos, clampedYPos, transform.localPosition.z);
+    }
+
+    private void ProcessRotation()
+    {
+        transform.localRotation = Quaternion.Euler(-30f, 30f, 0f);
     }
 }
