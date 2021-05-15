@@ -6,6 +6,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     //[SerializeField] InputAction movement;
+    //[SerializeField] InputAction fire;
 
     [SerializeField] float controlSpeed = 10f;
     [SerializeField] float xRange = 10f;
@@ -38,6 +39,7 @@ public class PlayerController : MonoBehaviour
     {
         ProcessTranslation();
         ProcessRotation();
+        ProcessFiring();
     }
 
     private void ProcessTranslation()
@@ -69,5 +71,18 @@ public class PlayerController : MonoBehaviour
         float yaw = transform.localPosition.x * positionYawFactor;
         float roll = xThrow * controlRollFactor;
         transform.localRotation = Quaternion.Euler(pitch, yaw, roll);
+    }
+
+    private void ProcessFiring()
+    {
+        //if(fire.ReadValue<float>() > 0.5)       
+        if(Input.GetButton("Fire1"))
+        {
+            Debug.Log("Firing...");
+        }
+        else
+        {
+            Debug.Log("Not Firing...");
+        }
     }
 }
