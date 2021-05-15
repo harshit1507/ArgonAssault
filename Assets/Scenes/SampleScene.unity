@@ -485,6 +485,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 174876473116277249, guid: 81706c7eb2c89fc48afbd6fde017f753,
+        type: 3}
+      propertyPath: EmissionModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1004962846557142228, guid: 81706c7eb2c89fc48afbd6fde017f753,
         type: 3}
       propertyPath: m_RootOrder
@@ -548,12 +553,12 @@ PrefabInstance:
     - target: {fileID: 2830324318587463913, guid: 81706c7eb2c89fc48afbd6fde017f753,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6027820448093261942, guid: 81706c7eb2c89fc48afbd6fde017f753,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7477133419546918618, guid: 81706c7eb2c89fc48afbd6fde017f753,
         type: 3}
@@ -570,5 +575,10 @@ PrefabInstance:
       propertyPath: lasers.Array.data[1]
       value: 
       objectReference: {fileID: 520311054}
+    - target: {fileID: 8542487383122789022, guid: 81706c7eb2c89fc48afbd6fde017f753,
+        type: 3}
+      propertyPath: EmissionModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81706c7eb2c89fc48afbd6fde017f753, type: 3}
