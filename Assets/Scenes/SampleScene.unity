@@ -370,6 +370,7 @@ GameObject:
   - component: {fileID: 1744806786}
   - component: {fileID: 1744806785}
   - component: {fileID: 1744806784}
+  - component: {fileID: 1744806789}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -472,6 +473,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &1744806789
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1744806783}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!95 &2022954351 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 1004962846557142229, guid: 81706c7eb2c89fc48afbd6fde017f753,
