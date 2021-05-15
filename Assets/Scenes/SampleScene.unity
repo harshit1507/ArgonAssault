@@ -176,6 +176,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &520311054 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6027820448093261942, guid: 81706c7eb2c89fc48afbd6fde017f753,
+    type: 3}
+  m_PrefabInstance: {fileID: 1004962845073549754}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -269,6 +275,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &756801611 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2830324318587463913, guid: 81706c7eb2c89fc48afbd6fde017f753,
+    type: 3}
+  m_PrefabInstance: {fileID: 1004962845073549754}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1343077395
 GameObject:
   m_ObjectHideFlags: 0
@@ -533,5 +545,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player Rig
       objectReference: {fileID: 0}
+    - target: {fileID: 2830324318587463913, guid: 81706c7eb2c89fc48afbd6fde017f753,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6027820448093261942, guid: 81706c7eb2c89fc48afbd6fde017f753,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7477133419546918618, guid: 81706c7eb2c89fc48afbd6fde017f753,
+        type: 3}
+      propertyPath: lasers.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7477133419546918618, guid: 81706c7eb2c89fc48afbd6fde017f753,
+        type: 3}
+      propertyPath: lasers.Array.data[0]
+      value: 
+      objectReference: {fileID: 756801611}
+    - target: {fileID: 7477133419546918618, guid: 81706c7eb2c89fc48afbd6fde017f753,
+        type: 3}
+      propertyPath: lasers.Array.data[1]
+      value: 
+      objectReference: {fileID: 520311054}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81706c7eb2c89fc48afbd6fde017f753, type: 3}

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -16,6 +17,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float controlPitchFactor = -15f;
     [SerializeField] float positionYawFactor = 2f;
     [SerializeField] float controlRollFactor = -20f;
+
+    [SerializeField] GameObject[] lasers;
 
     float xThrow, yThrow;
     // Start is called before the first frame update
@@ -78,11 +81,29 @@ public class PlayerController : MonoBehaviour
         //if(fire.ReadValue<float>() > 0.5)       
         if(Input.GetButton("Fire1"))
         {
-            Debug.Log("Firing...");
+            ActivateLasers();
         }
         else
         {
-            Debug.Log("Not Firing...");
+            DeactivateLasers();
         }
     }
+
+    private void ActivateLasers()
+    {
+        foreach(GameObject laser in lasers)
+        {
+            laser.SetActive(true);
+        }
+    }
+
+    private void DeactivateLasers()
+    {
+        foreach (GameObject laser in lasers)
+        {
+            laser.SetActive(false);
+        }
+    }
+
+   
 }
