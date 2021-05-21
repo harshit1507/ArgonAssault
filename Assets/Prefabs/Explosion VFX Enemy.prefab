@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 7194736132655002649}
   - component: {fileID: 6819718859260870170}
   - component: {fileID: 3425043317058665044}
+  - component: {fileID: 6638443261869402454}
   m_Layer: 0
-  m_Name: Explosion VFX
+  m_Name: Explosion VFX Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -225,12 +226,12 @@ ParticleSystem:
       maxColor: {r: 0, g: 0.5294118, b: 0.44705883, a: 1}
       maxGradient:
         serializedVersion: 2
-        key0: {r: 0, g: 0.6415094, b: 0.60880506, a: 1}
-        key1: {r: 0.40029067, g: 0.9716981, b: 0.94093, a: 1}
-        key2: {r: 0.08176094, g: 0.5716344, b: 1, a: 0}
-        key3: {r: 0.082352936, g: 1, b: 0.89065367, a: 0}
-        key4: {r: 0.74664766, g: 0.9811321, b: 0.9530741, a: 0}
-        key5: {r: 0.10062885, g: 0.5849907, b: 1, a: 0}
+        key0: {r: 0.6431373, g: 0.093412906, b: 0, a: 1}
+        key1: {r: 0.9491235, g: 0.972549, b: 0.40000004, a: 1}
+        key2: {r: 1, g: 0.082352936, b: 0.16659138, a: 0}
+        key3: {r: 0.40226507, g: 1, b: 0.082352936, a: 0}
+        key4: {r: 0.9150943, g: 0.1352497, b: 0.48296416, a: 0}
+        key5: {r: 1, g: 0.5379807, b: 0.10196078, a: 0}
         key6: {r: 0, g: 0, b: 0, a: 0}
         key7: {r: 0, g: 0, b: 0, a: 0}
         ctime0: 12143
@@ -4759,7 +4760,7 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: d35ef6f3684e9d140bad0bdf59df8a59, type: 2}
-  - {fileID: 2100000, guid: 2ee365f7bb02bd34e92396f1b3507d28, type: 2}
+  - {fileID: 2100000, guid: f146ecfa231feee47861244aa46bfe7f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4805,3 +4806,16 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+--- !u!114 &6638443261869402454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4303576092968300916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66fdda78d187a114e9f85cf1456a84b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeTillDestroy: 3

@@ -124,6 +124,36 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &210806910
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 210806911}
+  m_Layer: 0
+  m_Name: Spawn At Runtine
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &210806911
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 210806910}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &301336863
 GameObject:
   m_ObjectHideFlags: 0
@@ -389,6 +419,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c878efef56575e43b01d7908302565f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathVFX: {fileID: 4303576092968300916, guid: 3a70f108d7972934f908c0140aaf60cb,
+    type: 3}
+  parent: {fileID: 210806911}
 --- !u!136 &1417019953
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -594,6 +627,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c878efef56575e43b01d7908302565f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathVFX: {fileID: 4303576092968300916, guid: 3a70f108d7972934f908c0140aaf60cb,
+    type: 3}
+  parent: {fileID: 210806911}
 --- !u!95 &2022954351 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 1004962846557142229, guid: 81706c7eb2c89fc48afbd6fde017f753,
