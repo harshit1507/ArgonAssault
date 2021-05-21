@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3425043317058665044}
   - component: {fileID: 6638443261869402454}
   m_Layer: 0
-  m_Name: Explosion VFX Enemy
+  m_Name: Explosion VFX Enemy Kill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

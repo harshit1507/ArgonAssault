@@ -6,10 +6,10 @@ using TMPro;
 public class ScoreBoard : MonoBehaviour
 {
     int score;
-    TMP_Text scoreText;
+    TextMeshProUGUI scoreText;
     private void Start()
     {
-        scoreText = GetComponent<TMP_Text>();
+        scoreText = GetComponent<TextMeshProUGUI>();
         scoreText.text = score.ToString();
     }
 
