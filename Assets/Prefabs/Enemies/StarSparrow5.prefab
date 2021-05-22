@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3296384996302597810}
   - component: {fileID: 3303536638232020076}
   - component: {fileID: 3313752344838422568}
+  - component: {fileID: 216712580467491417}
   m_Layer: 0
   m_Name: StarSparrow5
   m_TagString: Untagged
@@ -82,6 +83,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &216712580467491417
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3290028064524717338}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 11.115113, y: 2.7828712, z: 10.850533}
+  m_Center: {x: 0, y: -0.000013887882, z: 0.0000026226044}
 --- !u!1 &3290248640426844982
 GameObject:
   m_ObjectHideFlags: 0
