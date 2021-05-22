@@ -5,16 +5,17 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     [SerializeField] GameObject deathVFX;
-    [SerializeField] GameObject hitVFX;
-    [SerializeField] Transform SpawnAtRuntime;
+    [SerializeField] GameObject hitVFX;    
     [SerializeField] int scorePerHit = 15;
     [SerializeField] int hitPoints = 2;
 
     ScoreBoard scoreBoard;
+    GameObject spawnAtRuntime;
 
     private void Start()
     {
         scoreBoard = FindObjectOfType<ScoreBoard>();
+        spawnAtRuntime = GameObject.FindWithTag("SpawnAtRuntime");
     }
     private void OnParticleCollision(GameObject other)
     {
@@ -27,7 +28,7 @@ public class Enemy : MonoBehaviour
         if(hitPoints < 1)
         {
             GameObject vfx = Instantiate(deathVFX, transform.position, Quaternion.identity);
-            vfx.transform.parent = SpawnAtRuntime;
+            vfx.transform.parent = spawnAtRuntime.transform;
             Destroy(gameObject);
         }
         
@@ -37,7 +38,7 @@ public class Enemy : MonoBehaviour
     {
         hitPoints--;
         GameObject vfx = Instantiate(hitVFX, transform.position, Quaternion.identity);
-        vfx.transform.parent = SpawnAtRuntime;
+        vfx.transform.parent = spawnAtRuntime.transform;
         scoreBoard.IncreseScore(scorePerHit);
     }
 }

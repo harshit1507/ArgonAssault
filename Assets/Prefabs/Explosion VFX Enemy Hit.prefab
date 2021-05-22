@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6638443261869402454}
   m_Layer: 0
   m_Name: Explosion VFX Enemy Hit
-  m_TagString: Untagged
+  m_TagString: EnemyHitExplosion
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -116,7 +116,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 0.02
+      scalar: 0.2
       minScalar: 0.1
       maxCurve:
         serializedVersion: 2

@@ -124,12 +124,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!4 &210806911 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 620964486194067908, guid: 00ec41f57a22a44479a0e06f54307946,
-    type: 3}
-  m_PrefabInstance: {fileID: 620964486385914299}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &301336863
 GameObject:
   m_ObjectHideFlags: 0
@@ -377,9 +371,8 @@ MonoBehaviour:
   deathVFX: {fileID: 4303576092968300916, guid: 3a70f108d7972934f908c0140aaf60cb,
     type: 3}
   hitVFX: {fileID: 4303576092968300916, guid: 3f27c49062347974e95cc35db7a6d679, type: 3}
-  SpawnAtRuntime: {fileID: 210806911}
   scorePerHit: 15
-  hitPoints: 10
+  hitPoints: 2
 --- !u!136 &1417019953
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -588,9 +581,8 @@ MonoBehaviour:
   deathVFX: {fileID: 4303576092968300916, guid: 3a70f108d7972934f908c0140aaf60cb,
     type: 3}
   hitVFX: {fileID: 4303576092968300916, guid: 3f27c49062347974e95cc35db7a6d679, type: 3}
-  SpawnAtRuntime: {fileID: 210806911}
   scorePerHit: 15
-  hitPoints: 4
+  hitPoints: 2
 --- !u!95 &2022954351 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 1004962846557142229, guid: 81706c7eb2c89fc48afbd6fde017f753,
