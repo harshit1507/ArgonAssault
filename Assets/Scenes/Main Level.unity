@@ -895,6 +895,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1004962845466166475, guid: 81706c7eb2c89fc48afbd6fde017f753,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1004962846557142228, guid: 81706c7eb2c89fc48afbd6fde017f753,
         type: 3}
       propertyPath: m_RootOrder
@@ -954,6 +959,41 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player Rig
+      objectReference: {fileID: 0}
+    - target: {fileID: 6303113258172519840, guid: 81706c7eb2c89fc48afbd6fde017f753,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6303113258172519840, guid: 81706c7eb2c89fc48afbd6fde017f753,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6303113258172519840, guid: 81706c7eb2c89fc48afbd6fde017f753,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.99471825
+      objectReference: {fileID: 0}
+    - target: {fileID: 6303113258172519840, guid: 81706c7eb2c89fc48afbd6fde017f753,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.10264367
+      objectReference: {fileID: 0}
+    - target: {fileID: 6303113258172519840, guid: 81706c7eb2c89fc48afbd6fde017f753,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6303113258172519840, guid: 81706c7eb2c89fc48afbd6fde017f753,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6303113258172519840, guid: 81706c7eb2c89fc48afbd6fde017f753,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 11.783
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81706c7eb2c89fc48afbd6fde017f753, type: 3}
